@@ -13,16 +13,17 @@
     <h1>Secure Password Generator</h1>
 
 
-    <form action="">
-      <!--Add HTML here-->
+    <form id="form" action="">
+      <p>Select how many characters you would like your password to be</p><br/>
+      <input id='testy' type="number" name="characterCount" min="4" max="15"> <!-- number needs to be equal to length in javascript-->
+      <input type="submit" value="Submit">
     </form>
 
-
     <!--A generated password should appear within <output> when the form is submitted -->
-    <output id="result" />
+    <output id="end"></output>
 
 
   </div>
-
+<script src="./index.js"></script>
 </body>
 </html>
